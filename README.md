@@ -35,5 +35,5 @@ If you find errors, feel free to open an "Issue" on GitHub.
 # Run the script
 Nearly all systems supports this
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/shaikhnedab/Pterodactyl-Wings-Installer/main/wingsinstaller.sh)
+bash <(curl -s https://github.com/rabi07/Pterodactyl-Wings-Installer/blob/main/wingsinstaller.sh)
 ```
