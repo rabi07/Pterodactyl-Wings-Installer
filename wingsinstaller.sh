@@ -102,7 +102,7 @@ wingsfiles(){
     if  [ "$dist" =  "ubuntu" ] || [ "$dist" =  "debian" ]; then
         mkdir -p /etc/pterodactyl || exit || output "An error occurred. Could not create directory." || exit
         apt-get -y install curl tar unzip
-        curl -L -o /usr/local/bin/wings "https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_$([[ "$(uname -m)" == "x86_64" ]] && echo "amd64" || echo "arm64")"
+        curl -L -o /usr/local/bin/wings "https://github.com/pterodactyl/wings/releases/latest/download/v1.4.7/wings_linux_$([[ "$(uname -m)" == "x86_64" ]] && echo "amd64" || echo "arm64")"
         curl -o /etc/systemd/system/wings.service https://raw.githubusercontent.com/shaikhnedab/Pterodactyl-Wings-Installer/main/configs/wings.service
         chmod u+x /usr/local/bin/wings
         clear
